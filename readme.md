@@ -8,7 +8,7 @@ Double click the `.exe` file to run it.
 
 you can also clone the repo to set it yourself.
 
-when you pressed a key, it will be shown in 2 seconds on your screen.wasd 
+when you pressed a key, it will be shown in 2 seconds on your screen.
 
 File struct:
 ~~~
@@ -36,6 +36,7 @@ File struct:
     "字体/font": null,
     "是否加粗/bold?": true,
     "字号/text_size": 24,
+    "响应时间/time.sleep(?)": 0.05,
     "PS": "如果你懂Python，你可以自己改代码。If you understand Python, you can modify the code yourself."
 }
 ~~~

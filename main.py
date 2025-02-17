@@ -18,7 +18,12 @@ import json
 
 
 class MonitorKeyboard:
-    def __init__(self,name,picture,description,text_bg="#870eb3",text_fg="#ffffff",bg="#000000",fg="#ffffff",font=("ariblk.ttf bold", 24)):
+    def __init__(
+            self,name,picture,description,text_bg="#870eb3",
+            text_fg="#ffffff",bg="#000000",fg="#ffffff",font=("ariblk.ttf bold", 24),
+            sleepTime=.05
+    ):
+        self.sleepTime=sleepTime
         self.text_bg=text_bg
         self.text_fg=text_fg
         self.bg = bg
@@ -159,7 +164,7 @@ class MonitorKeyboard:
                 self.data.clear()
                 for item in self.labelList:
                     item.config(text="")
-            time.sleep(.05)# 单位 s
+            time.sleep(self.sleepTime)# 单位 s
             # 短延迟（< 100 毫秒）：用户通常不会感觉到延迟，界面看起来是流畅的。
             # 中等延迟（100-500 毫秒）：用户可能会感觉到轻微的延迟，但通常是可以接受的。
             # 长延迟（> 500 毫秒）：用户会明显感觉到延迟，可能会影响体验。
@@ -168,7 +173,7 @@ class MonitorKeyboard:
 
 
 if __name__ == '__main__':
-    url="www.example.com"
+    url="https://github.com/Pfolg/MonitorKeyboard"
     config_file="MKConfig.json"
     config={
         "托盘名称/name":"MonitorKeyboard",
@@ -179,6 +184,7 @@ if __name__ == '__main__':
         "字体/font":None,
         "是否加粗/bold?":True,
         "字号/text_size":24,
+        "响应时间/time.sleep(?)":.05,
         "PS":"如果你懂Python，你可以自己改代码。If you understand Python, you can modify the code yourself."
     }
     if os.path.exists(config_file):
@@ -207,5 +213,6 @@ if __name__ == '__main__':
         description=config.get("描述/description"),
         text_bg=config.get("文本背景颜色/text_bg"),
         text_fg=tfg,
-        font=your_font
+        font=your_font,
+        sleepTime=config.get("响应时间/time.sleep(?)")
     )
