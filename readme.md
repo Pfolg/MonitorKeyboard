@@ -1,4 +1,5 @@
 # About
+![alt text](logo.ico)
 
 A simple Program which is used to show which key you pressd.
 
@@ -24,6 +25,7 @@ File struct:
 ~~~
 
 # Infor
+you can watch my video to know more: https://www.bilibili.com/video/BV1Vhw9euEqa/
 
 ![alt text](image.png)
 
