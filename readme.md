@@ -10,6 +10,8 @@ you can also clone the repo to set it yourself.
 
 when you pressed a key, it will be shown in 2 seconds on your screen.
 
+**can not monitor your mouse!**
+
 File struct:
 ~~~
 ---
