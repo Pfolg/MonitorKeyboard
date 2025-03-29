@@ -1,5 +1,5 @@
 # About
-![alt text](logo.ico)
+![alt text](./MonitorKeyboard/logo.ico)
 
 A simple Program which is used to show which key you pressd.
 
@@ -27,7 +27,7 @@ File struct:
 # Infor
 you can watch my video to know more: https://www.bilibili.com/video/BV1Vhw9euEqa/
 
-![alt text](image.png)
+![alt text](/MonitorKeyboard/image.png)
 
 **MKConfig.json**
 ~~~json
@@ -44,8 +44,8 @@ you can watch my video to know more: https://www.bilibili.com/video/BV1Vhw9euEqa
     "PS": "如果你懂Python，你可以自己改代码。If you understand Python, you can modify the code yourself."
 }
 ~~~
-![alt text](image-1.png)
+![alt text](/MonitorKeyboard/image-1.png)
 
-![alt text](image-2.png)
+![alt text](/MonitorKeyboard/image-2.png)
 
 Thanks every package's Contributors！
