@@ -19,5 +19,9 @@
 + 限制单实例
 
 # 下载
-+ 实时键盘状态 + 实时鼠标位置
-+ 仅实时键盘状态
++ [实时键盘状态 + 实时鼠标位置](https://github.com/Pfolg/MonitorKeyboard/releases/download/v1.1.0/KeyMonitor.exe)
++ [仅实时键盘状态](https://github.com/Pfolg/MonitorKeyboard/releases/download/v1.1.0/KeyMonitor_noMouseTracker.exe)
+
+
+>[!NOTE]
+>[Python 版说明文档](https://github.com/Pfolg/MonitorKeyboard/wiki/Python-v2-v1.0.0)
